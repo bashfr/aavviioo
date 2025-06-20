@@ -1,1 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" width="1845px" height="915px" style="fill: none; width: 1845px; height: 915px;"><path d="" style="stroke-width: 15; stroke-linecap: round; stroke-linejoin: round; stroke: rgb(106, 106, 106); fill: none;"/><path d="" style="stroke-width: 15; stroke-linecap: round; stroke-linejoin: round; stroke: rgb(74, 74, 74); fill: none;"/><path d="M900,360 L900,360 L900,480 L1020,420 L780,300 L900,480 M945,360 L945,360 L945,480 L825,420 L945,360 L1065,300 L945,480 M900,555 L900,555 L900,435 L1020,495 L780,615 L900,435 M945,555 L945,555 L945,435 L825,495 L945,555 L1065,615 L945,435 " style="stroke-width: 15; stroke-linecap: round; stroke-linejoin: round; stroke: rgb(10, 10, 10); fill: none;"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.29 311.54">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #0a0a0a;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 15px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="m120.47,63.98h0v112.97l112.97-56.48L7.5,7.5l112.97,169.45m42.36-112.97h0v112.97l-112.97-56.48,112.97-56.48L275.79,7.5l-112.97,169.45m-42.36,70.6h0v-112.97l112.97,56.48L7.5,304.04l112.97-169.45m42.36,112.97h0v-112.97l-112.97,56.48,112.97,56.48,112.97,56.48-112.97-169.45"/>
+</svg>
