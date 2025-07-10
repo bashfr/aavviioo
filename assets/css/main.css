@@ -34,8 +34,12 @@ header {
     float: left;
 }
 
+header img {
+    height: 100px
+}
+
 nav {
-    padding: 35px;
+    padding: 20px;
 }
 
 main a {
