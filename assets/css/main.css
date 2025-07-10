@@ -1,0 +1,111 @@
+* {
+    text-decoration: none;
+}
+
+a,
+ul,
+ol {
+    color: #000;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+body {
+    margin: 0 auto;
+    max-width: 800px;
+    font-size: 20px;
+    font-family: serif;
+    padding: 15px;
+
+}
+
+header {
+    width: 100px;
+    margin: 15px 45px 8px 0;
+    float: left;
+}
+
+nav {
+    padding: 35px;
+}
+
+main a {
+    text-decoration: underline;
+    color: #35b2fa;
+}
+
+
+figure {
+    margin: 0;
+}
+
+figure img {
+    max-width: 800px;
+}
+
+footer {
+    color: #afafaf;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #000;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background: #fff;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+
+    a {
+        color: #fff;
+    }
+    
+    footer p {
+        color: #afafaf;
+    }
+
+        * {
+        color: #fff;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    * {
+        color: #000;
+    }
+
+    footer p{
+        color: #afafaf;
+    }
+
+    a {
+        color: #000;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+
+    img[src*="svg"],
+    img[src*="png"] {
+        filter: invert(1) hue-rotate(180deg);
+    }
+}
+
+* ::selection {
+    background-color: #35bcfa;
+    color: #000;
+}
