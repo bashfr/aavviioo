@@ -12,11 +12,6 @@ a {
     vertical-align: baseline;
 }
 
-
-ul {
-    list-style: none;
-}
-
 body {
     margin: 0 auto;
     max-width: 800px;
@@ -44,6 +39,8 @@ nav li {
 
 nav ul {
     margin-bottom: 8px;
+    list-style: none;
+    padding: 0;
 }
 main a {
     text-decoration: underline;
