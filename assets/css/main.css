@@ -16,7 +16,7 @@ body {
     margin: 0 auto;
     max-width: 800px;
     font-size: 16px;
-    font-family: serif;
+    font-family: sans-serif;
     padding: 15px;
 
 }
@@ -24,7 +24,8 @@ body {
 header {
     width: 100px;
     float: left;
-    margin: 0 40px 40px 0;;
+    margin: 0 40px 40px 0;
+    ;
 }
 
 .index {
@@ -35,7 +36,7 @@ header {
 }
 
 .index h1 {
-        text-align: center;
+    text-align: center;
 }
 
 nav {
@@ -71,7 +72,8 @@ figure img {
     margin-right: auto;
 }
 
-table td, table th {
+table td,
+table th {
     vertical-align: top;
     padding: 2.5px 5px;
     text-align: left;
@@ -83,11 +85,11 @@ footer {
 }
 
 .main_nav {
-   display: inline; 
+    display: inline;
 }
 
-.main_nav > a {
-    display: inline; 
+.main_nav>a {
+    display: inline;
 }
 
 span a:nth-child(2) {
@@ -115,12 +117,12 @@ span a {
     a {
         color: #fff;
     }
-    
+
     footer p {
         color: #afafaf;
     }
 
-        * {
+    * {
         color: #fff;
     }
 }
@@ -130,7 +132,7 @@ span a {
         color: #000;
     }
 
-    footer p{
+    footer p {
         color: #afafaf;
     }
 
