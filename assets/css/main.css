@@ -62,7 +62,7 @@ main a[target="_blank"] {
 }
 
 
-figure {
+figure, li {
     margin: 0;
 }
 
@@ -110,6 +110,11 @@ span a {
     body {
         background: #fff;
     }
+
+    * ::selection {
+    background-color: #000000;
+    color: #ffffff;
+}
 }
 
 @media (prefers-color-scheme: dark) {
@@ -139,6 +144,8 @@ span a {
     a {
         color: #000;
     }
+
+    
 }
 
 @media (prefers-color-scheme: dark) {
@@ -147,9 +154,9 @@ span a {
     img[src*="png"] {
         filter: invert(1) hue-rotate(180deg);
     }
-}
 
-* ::selection {
-    background-color: #35bcfa;
+    * ::selection {
+    background-color: #ffffff;
     color: #000;
+}
 }
