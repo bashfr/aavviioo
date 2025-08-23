@@ -61,6 +61,10 @@ main a[target="_blank"] {
     text-decoration-style: dashed;
 }
 
+main img {
+    max-width: 800px;
+}
+
 
 figure, li {
     margin: 0;
