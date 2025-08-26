@@ -76,6 +76,10 @@ figure img {
     margin-right: auto;
 }
 
+figcaption {
+    font-style: italic;
+}
+
 table td,
 table th {
     vertical-align: top;
