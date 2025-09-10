@@ -39,14 +39,14 @@ header {
     text-align: center;
 }
 
-nav {
-    margin-bottom: 100px;
-}
-
 nav ul {
     margin-bottom: 8px;
     list-style: none;
     padding: 0;
+}
+
+nav li {
+    display: inline;
 }
 
 main {
