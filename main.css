@@ -97,6 +97,11 @@ figcaption {
     text-align: center;
 }
 
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+
 table td,
 table th {
     vertical-align: top;
