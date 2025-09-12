@@ -80,11 +80,15 @@ figcaption {
     font-style: italic;
 }
 
-.void {
-    display: inline-block;
+.box {
     position: relative;
-    left: 420px;
-    bottom: 370px;
+}
+
+.void {
+    font-size: 3vmin;
+    position: absolute;
+    left: 53%;
+    top: 38%;
     transform: rotate(90deg);
 }
 
