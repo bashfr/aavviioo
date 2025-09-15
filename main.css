@@ -29,9 +29,9 @@ header {
 
 .index {
     float: none;
-    width: 70%;
-    margin: 25% auto 25% auto;
-    font-size: 32px;
+    width: 50%;
+    margin: 25% 25% 0 auto;
+    font-size: 25px;
 }
 
 .index h1 {
