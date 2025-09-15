@@ -97,7 +97,7 @@ figcaption {
     transform: rotate(90deg);
 }
 
-.gray {
+.gray, .gray * {
     color: #777;
 }
 
