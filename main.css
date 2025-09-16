@@ -43,6 +43,12 @@ nav ul {
     list-style: none;
     padding: 0;
 }
+
+nav ul ul li {
+    display: block;
+    content:""
+
+}
 main > nav:first-child li:not(:first-child):before {
     content:" > "
 }
