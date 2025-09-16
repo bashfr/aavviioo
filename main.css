@@ -43,6 +43,14 @@ nav ul {
     list-style: none;
     padding: 0;
 }
+main > nav:first-child li:not(:first-child):before {
+    content:" > "
+}
+
+h1 ~ nav li {
+    padding: 0;
+    margin-bottom: 8px;
+}
 
 nav li {
     display: inline;
