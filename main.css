@@ -50,14 +50,18 @@ nav ul {
     padding: 0;
 }
 
+h2 ~ ul {
+    list-style-type: square;
+}
+
 nav ul ul li {
     display: block;
-    content: ""
+    content: "";
 
 }
 
 main>nav ul:first-child li:not(:first-child, :nth-child(2)):before {
-    content: " > "
+    content: " : ";
 }
 
 h1~nav li {
