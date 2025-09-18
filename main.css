@@ -2,6 +2,11 @@
     text-decoration: none;
 }
 
+hr {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
 a {
     color: #000;
     margin: 0;
@@ -46,14 +51,15 @@ nav ul {
 
 nav ul ul li {
     display: block;
-    content:""
+    content: ""
 
 }
-main > nav:first-child li:not(:first-child):before {
-    content:" > "
+
+main>nav ul:first-child li:not(:first-child, :nth-child(2)):before {
+    content: " > "
 }
 
-h1 ~ nav li {
+h1~nav li {
     padding: 0;
     margin-bottom: 8px;
 }
@@ -93,6 +99,7 @@ figure img {
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    object-fit: fill;
 }
 
 figcaption {
@@ -119,7 +126,8 @@ figcaption {
     bottom: 48.5%;
 }
 
-.gray, .gray * {
+.gray,
+.gray * {
     color: #777;
 }
 
@@ -169,9 +177,9 @@ span a {
     }
 
     * ::selection {
-    background-color: #000000;
-    color: #ffffff;
-}
+        background-color: #000000;
+        color: #ffffff;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -191,6 +199,7 @@ span a {
     .sad {
         color: transparent;
     }
+
     .sad:hover {
         color: #000;
         text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff
@@ -209,17 +218,18 @@ span a {
     a {
         color: #000;
     }
+
     .sad {
         color: transparent;
-        
+
     }
+
     .sad:hover {
         color: #fff;
         text-shadow: -1px 1px 0 #000, 1px 1px 0 #000
-        
     }
 
-    
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -230,7 +240,7 @@ span a {
     }
 
     * ::selection {
-    background-color: #ffffff;
-    color: #000;
-}
+        background-color: #ffffff;
+        color: #000;
+    }
 }
