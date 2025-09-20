@@ -115,14 +115,6 @@ figcaption {
     position: relative;
 }
 
-.void {
-    font-size: 1.3vmin;
-    position: absolute;
-    left: 51%;
-    top: 39.5%;
-    /* transform: rotate(90deg); */
-}
-
 .index__center {
     font-size: 2vmin;
     position: absolute;
