@@ -140,9 +140,8 @@ table th {
     border-style: groove;
 }
 
-footer {
-    text-align: center;
-    color: #777;
+footer * {
+    border-color: #777;
 }
 
 .main_nav {
