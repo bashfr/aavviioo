@@ -59,8 +59,12 @@ nav ul ul li {
 
 }
 
-main>nav ul:first-child li:not(:first-child, :nth-child(2)):before {
+main > nav ul:first-child li:not(:first-child, :nth-child(2)):before {
     content: " : ";
+}
+
+main > .home ul:first-child li:not(:first-child, :nth-child(2)):before {
+    content: "";
 }
 
 h1~nav li {
