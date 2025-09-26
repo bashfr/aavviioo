@@ -118,14 +118,6 @@ figcaption {
     position: relative;
 }
 
-.index__center {
-    font-size: 2vmin;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    bottom: 48.5%;
-}
-
 .gray,
 .gray * {
     color: #777;
@@ -194,15 +186,6 @@ span a {
     * {
         color: #fff;
     }
-
-    .sad {
-        color: transparent;
-    }
-
-    .sad:hover {
-        color: #000;
-        text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff
-    }
 }
 
 @media (prefers-color-scheme: light) {
@@ -217,17 +200,6 @@ span a {
     a {
         color: #000;
     }
-
-    .sad {
-        color: transparent;
-
-    }
-
-    .sad:hover {
-        color: #fff;
-        text-shadow: -1px 1px 0 #000, 1px 1px 0 #000
-    }
-
 
 }
 
