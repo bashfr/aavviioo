@@ -32,6 +32,10 @@ header {
     margin: 0 40px 40px 0;
 }
 
+pre {
+    tab-size: 2;
+}
+
 .index {
     float: none;
     width: 50%;
@@ -67,6 +71,10 @@ main > .home ul:first-child li:not(:first-child, :nth-child(2)):before {
     content: "";
 }
 
+main pre {
+    overflow: auto;
+}
+
 h1~nav li {
     padding: 0;
     margin-bottom: 8px;
@@ -80,7 +88,7 @@ main {
     clear: both;
 }
 
-main a {
+main a, footer a {
     text-decoration: underline;
 }
 
@@ -179,7 +187,7 @@ span a {
         color: #fff;
     }
 
-    footer p {
+    footer p, footer a {
         color: #afafaf;
     }
 
@@ -213,5 +221,8 @@ span a {
     * ::selection {
         background-color: #ffffff;
         color: #000;
+    }
+    main pre {
+        background: #1b1b1b;
     }
 }
