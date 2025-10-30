@@ -216,11 +216,6 @@ span a {
         color: #fff;
     }
 
-    footer p,
-    footer a {
-        color: #afafaf;
-    }
-
     * {
         color: #fff;
     }
@@ -229,10 +224,6 @@ span a {
 @media (prefers-color-scheme: light) {
     * {
         color: #000;
-    }
-
-    footer p {
-        color: #afafaf;
     }
 
     a {
