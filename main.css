@@ -61,6 +61,10 @@ wallpaper {
     text-align: center;
 }
 
+.date {
+    text-align: right;
+}
+
 nav ul {
     margin-bottom: 8px;
     list-style: none;
@@ -114,6 +118,10 @@ main a[target="_blank"] {
 
 main img {
     max-width: 800px;
+}
+
+main h2 {
+    text-align: center;
 }
 
 
