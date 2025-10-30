@@ -1,3 +1,8 @@
+html {
+    background-image: url(media/back.jpg);
+    background-size: cover;
+}
+
 * {
     text-decoration: none;
 }
@@ -19,18 +24,16 @@ a {
 
 body {
     margin: 0 auto;
-    max-width: 800px;
     font-size: 16px;
     font-family: sans-serif;
     padding: 15px;
 
 }
 
-/* header {
-    width: 100px;
-    float: left;
-    margin: 0 40px 40px 0;
-} */
+header, footer {
+    margin: 0 auto;
+    max-width: 800px;
+}
 
 pre {
     tab-size: 2;
@@ -103,6 +106,7 @@ nav li {
 }
 
 main {
+    max-width: 800px;
     margin: 5% auto;
     clear: both;
 }
@@ -169,7 +173,7 @@ table th {
     border-style: groove;
 }
 
-footer {
+footer *{
     float: right;
 }
 
