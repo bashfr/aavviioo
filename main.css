@@ -26,21 +26,28 @@ body {
 
 }
 
-header {
+/* header {
     width: 100px;
     float: left;
     margin: 0 40px 40px 0;
-}
+} */
 
 pre {
     tab-size: 2;
 }
 
+#bg {
+    background-image: url(media/0.png);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
 .index {
     float: none;
     width: 50%;
-    margin: 12.5% 25% 0 auto;
-    font-size: 25px;
+    margin: 12.5% 25% 12.5% auto;;
+    font-size: 3vh;
 }
 
 .index h1 {
@@ -214,7 +221,8 @@ span a {
 @media (prefers-color-scheme: dark) {
 
     img[src*="svg"],
-    img[src*="png"] {
+    img[src*="png"],
+    wallpaper {
         filter: invert(1) hue-rotate(180deg);
     }
 
