@@ -36,6 +36,14 @@ pre {
     tab-size: 2;
 }
 
+wallpaper {
+    position:absolute;
+    background-image: url(media/back.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
 #bg {
     background-image: url(media/0.png);
     background-size: cover;
@@ -45,7 +53,7 @@ pre {
 
 .index {
     float: none;
-    width: 50%;
+    max-width: 700px;
     font-size: 3vh;
 }
 
@@ -110,6 +118,7 @@ main img {
 
 
 figure {
+    text-align: center;
     margin: 0 0 10px 0;
 }
 
@@ -126,9 +135,9 @@ figure img {
     object-fit: fill;
 }
 
-/* figcaption {
+figcaption {
     font-style: italic;
-} */
+}
 
 .box {
     position: relative;
@@ -150,6 +159,10 @@ table th {
     padding: 2.5px 5px;
     text-align: left;
     border-style: groove;
+}
+
+footer {
+    float: right;
 }
 
 footer * {
@@ -223,8 +236,7 @@ span a {
 @media (prefers-color-scheme: dark) {
 
     img[src*="svg"],
-    img[src*="png"],
-    wallpaper {
+    img[src*="png"] {
         filter: invert(1) hue-rotate(180deg);
     }
 
