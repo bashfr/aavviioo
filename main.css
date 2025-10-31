@@ -1,6 +1,6 @@
 html {
-    background-image: url(media/back.jpg);
-    background-size: cover;
+    background-image: url(media/back.png);
+    /* background-size: cover; */
 }
 
 * {
@@ -30,7 +30,8 @@ body {
 
 }
 
-header, footer {
+header,
+footer {
     margin: 0 auto;
     max-width: 800px;
 }
@@ -40,8 +41,8 @@ pre {
 }
 
 wallpaper {
-    position:absolute;
-    background-image: url(media/back.jpg);
+    position: absolute;
+    background-image: url(media/случайность-1.png);
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -107,7 +108,7 @@ nav li {
 
 main {
     max-width: 800px;
-    margin: 5% auto;
+    margin: 2% auto;
     clear: both;
 }
 
@@ -173,12 +174,8 @@ table th {
     border-style: groove;
 }
 
-footer *{
-    float: right;
-}
-
-footer * {
-    border-color: #777;
+footer {
+    text-align: right;
 }
 
 .main_nav {
@@ -204,6 +201,10 @@ span a {
 }
 
 @media (prefers-color-scheme: light) {
+    
+    html {
+        background-image: url(media/back-invert.png);
+    }
     body {
         background: #fff;
     }
