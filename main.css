@@ -148,7 +148,13 @@ figure img {
     object-fit: fill;
 }
 
-figcaption {
+figcaption span {
+    text-align: left;
+    font-style: italic;
+}
+
+figcaption a {
+    text-align: center;
     font-style: italic;
 }
 
