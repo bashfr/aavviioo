@@ -75,10 +75,6 @@ nav ul {
     padding: 0;
 }
 
-h2~ul {
-    list-style-type: square;
-}
-
 nav ul ul li {
     display: block;
     content: "";
