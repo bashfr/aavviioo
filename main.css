@@ -30,10 +30,19 @@ body {
 
 }
 
+header {
+    text-align: center;
+}
+
 header,
 footer {
     margin: 0 auto;
     max-width: 800px;
+}
+
+header > a {
+    display: block;
+    margin-bottom: 2%;
 }
 
 pre {
@@ -56,9 +65,17 @@ wallpaper {
 }
 
 .index {
-    max-width: 400px;
     float: none;
-    font-size: 18px;
+    font-size: 16px;
+}
+
+.index ul {
+    display: block;
+    padding: 0;
+    list-style: none;
+    float: left;
+    clear: both;
+    margin: 0 0 10px 0;
 }
 
 .index h1 {
@@ -151,7 +168,8 @@ figcaption a {
 }
 
 .box {
-    position: relative;
+    margin: 0 auto;
+    max-width: 400px;
 }
 
 .gray,
@@ -173,7 +191,12 @@ table th {
 }
 
 footer {
-    text-align: right;
+    width: 100%;
+    max-width: 800px;
+}
+
+footer span:nth-child(2) {
+    float: right;
 }
 
 .main_nav {
