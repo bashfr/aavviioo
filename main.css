@@ -22,16 +22,17 @@ a {
     vertical-align: baseline;
 }
 
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
 body {
     margin: 0 auto;
     font-size: 16px;
     font-family: sans-serif;
     padding: 15px;
 
-}
-
-header {
-    text-align: center;
 }
 
 header,
@@ -69,6 +70,11 @@ wallpaper {
     font-size: 16px;
 }
 
+.index > section {
+    display: flex;
+    justify-content: space-between;
+}
+
 .index ul {
     display: block;
     padding: 0;
@@ -78,8 +84,12 @@ wallpaper {
     margin: 0 0 10px 0;
 }
 
-.index h1 {
+.index > h1 {
     text-align: center;
+}
+
+.index li {
+    text-align: left;
 }
 
 .date {
@@ -110,6 +120,11 @@ main pre {
     overflow: auto;
 }
 
+section {
+    display: inline-block;
+    vertical-align: top;
+}
+
 h1~nav li {
     padding: 0;
     margin-bottom: 8px;
@@ -130,9 +145,9 @@ footer a {
     text-decoration: underline;
 }
 
-main a[target="_blank"] {
+/* main a[target="_blank"] {
     text-decoration-style: double;
-}
+} */
 
 main img {
     max-width: 800px;
@@ -191,12 +206,7 @@ table th {
 }
 
 footer {
-    width: 100%;
-    max-width: 800px;
-}
-
-footer span:nth-child(2) {
-    float: right;
+    text-align: right;
 }
 
 .main_nav {
