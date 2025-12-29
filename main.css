@@ -41,7 +41,7 @@ footer {
     max-width: 800px;
 }
 
-header > a {
+header>a {
     display: block;
     margin-bottom: 2%;
 }
@@ -66,13 +66,24 @@ wallpaper {
 }
 
 .index {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
     float: none;
     font-size: 16px;
 }
 
-.index > section {
-    display: flex;
-    justify-content: space-between;
+.index h1 {
+    border-bottom: 1px solid #fff;
+}
+
+.index>div {
+    margin: 0 auto;
+    max-width: 200px
+}
+
+.index>figure {
+    flex: auto;
 }
 
 .index ul {
@@ -84,7 +95,7 @@ wallpaper {
     margin: 0 0 10px 0;
 }
 
-.index > h1 {
+.index>h1 {
     text-align: center;
 }
 
@@ -121,6 +132,7 @@ main pre {
 }
 
 section {
+    flex: 1 1 300px;
     display: inline-block;
     vertical-align: top;
 }
@@ -232,10 +244,11 @@ footer {
 }
 
 @media (prefers-color-scheme: light) {
-    
+
     html {
         background-image: url(media/back-invert.png);
     }
+
     body {
         background: #fff;
     }
