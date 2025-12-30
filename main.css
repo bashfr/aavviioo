@@ -66,7 +66,6 @@ wallpaper {
 }
 
 .index {
-    display: flex;
     flex-wrap: wrap;
     gap: 2em;
     float: none;
@@ -119,6 +118,10 @@ nav ul ul li {
 
 }
 
+main {
+        display: flex;
+}
+
 main>nav ul:first-child li:not(:first-child, :nth-child(2)):before {
     content: " : ";
 }
@@ -130,6 +133,10 @@ main>.home ul:first-child li:not(:first-child, :nth-child(2)):before {
 main pre {
     overflow: auto;
 }
+
+/* .gallery {
+    display: flex;
+} */
 
 section {
     flex: 1 1 300px;
