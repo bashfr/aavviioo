@@ -164,9 +164,9 @@ footer a {
     text-decoration: underline;
 }
 
-/* main a[target="_blank"] {
+main a[target="_blank"] {
     text-decoration-style: double;
-} */
+}
 
 main img {
     max-width: 800px;
