@@ -72,9 +72,9 @@ wallpaper {
     font-size: 16px;
 }
 
-.index h1 {
+/* .index h1 {
     border-bottom: 1px solid #fff;
-}
+} */
 
 .index>div {
     margin: 0 auto;
@@ -268,6 +268,9 @@ footer {
 
 @media (prefers-color-scheme: dark) {
 
+    .index h1 {
+        border-bottom: 1px solid #fff;
+    }
     a {
         color: #fff;
     }
@@ -284,6 +287,9 @@ footer {
 
     a {
         color: #000;
+    }
+    .index h1 {
+        border-bottom: 1px solid #000;
     }
 
 }
