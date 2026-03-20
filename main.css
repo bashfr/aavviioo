@@ -1,14 +1,16 @@
-html {
-    background-image: url(media/back.png);
-    /* background-size: cover; */
+nav ul,
+figure {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
 }
 
-* {
-    text-decoration: none;
+h1 {
+    border-bottom: 1px solid;
 }
 
 hr {
-    margin-block-start: 1em;
+    margin-block-stthings: 1em;
     margin-block-end: 1em;
 }
 
@@ -22,183 +24,76 @@ a {
     vertical-align: baseline;
 }
 
-ul {
-    padding: 0;
-    list-style-type: none;
+nav {
+    display: inline-block;
+}
+
+nav a,
+.things,
+.tree a {
+    text-decoration: none;
 }
 
 body {
+    text-transform: lowercase;
     margin: 0 auto;
-    font-size: 16px;
-    font-family: sans-serif;
+    font-family: monospace;
     padding: 15px;
 
 }
 
-header,
-footer {
-    margin: 0 auto;
-    max-width: 800px;
-}
 
 header>a {
-    display: block;
     margin-bottom: 2%;
 }
 
-pre {
-    tab-size: 2;
+
+cite::before {
+    content: " — ";
 }
 
-wallpaper {
-    position: absolute;
-    background-image: url(media/случайность-1.png);
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.things {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.things img {
+    max-width: 100%;
+}
+
+.photo {
     background-size: cover;
-    height: 100%;
-    width: 100%;
 }
 
-#bg {
-    background-image: url(media/0.png);
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-}
 
-.index {
-    flex-wrap: wrap;
-    gap: 2em;
-    float: none;
-    font-size: 16px;
-}
-
-/* .index h1 {
-    border-bottom: 1px solid #fff;
-} */
-
-.index>div {
-    margin: 0 auto;
-    max-width: 200px
-}
-
-.index>figure {
-    flex: auto;
-}
-
-.index ul {
-    display: block;
-    padding: 0;
-    list-style: none;
-    float: left;
-    clear: both;
-    margin: 0 0 10px 0;
-}
-
-.index>h1 {
-    text-align: center;
-}
-
-.index li {
-    text-align: left;
-}
-
-.date {
-    text-align: right;
-}
-
-nav ul {
-    margin-bottom: 8px;
-    list-style: none;
-    padding: 0;
-}
-
-nav ul ul li {
-    display: block;
-    content: "";
-
-}
-
-.index {
-        display: flex;
-}
-
-main>nav ul:first-child li:not(:first-child, :nth-child(2)):before {
-    content: " : ";
-}
-
-main>.home ul:first-child li:not(:first-child, :nth-child(2)):before {
-    content: "";
-}
-
-main pre {
-    overflow: auto;
-}
-
-/* .gallery {
-    display: flex;
-} */
-
-section {
-    flex: 1 1 300px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-h1~nav li {
-    padding: 0;
-    margin-bottom: 8px;
-}
-
-nav li {
-    display: inline;
-}
-
+header,
+nav,
 main {
-    max-width: 800px;
-    margin: 2% auto;
-    clear: both;
+    margin: 0 auto;
+    max-width: 900px;
 }
 
-main a,
-footer a {
-    text-decoration: underline;
-}
 
 main a[target="_blank"] {
     text-decoration-style: double;
 }
 
 main img {
-    max-width: 800px;
+    max-width: 100%;
 }
 
 
 figure {
-    text-align: center;
-    margin: 10px 0;
-}
-
-
-li {
-    margin: 0;
+    padding: 10px;
 }
 
 figure img {
     max-width: 100%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    object-fit: fill;
-}
-
-figcaption span {
-    text-align: left;
-    font-style: italic;
-}
-
-figcaption a {
-    text-align: center;
-    font-style: italic;
 }
 
 .box {
@@ -211,37 +106,16 @@ figcaption a {
     color: #777;
 }
 
-.center {
-    text-align: center;
-    margin: 0 auto;
-}
-
-table td,
-table th {
-    vertical-align: top;
-    padding: 2.5px 5px;
-    text-align: left;
-    border-style: groove;
-}
-
 footer {
     text-align: right;
 }
 
-.main_nav {
-    display: inline;
-}
-
-.main_nav>a {
-    display: inline;
-}
-
-.index span a:nth-child(2) {
-    float: right
-}
-
-.index span a {
-    text-decoration: none;
+.jump {
+    margin-bottom: 20px;
+    list-style-type: decimal-leading-zero;
+    list-style-position: inside;
+    columns: 2;
+    line-height: 20px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -268,9 +142,6 @@ footer {
 
 @media (prefers-color-scheme: dark) {
 
-    .index h1 {
-        border-bottom: 1px solid #fff;
-    }
     a {
         color: #fff;
     }
@@ -287,9 +158,6 @@ footer {
 
     a {
         color: #000;
-    }
-    .index h1 {
-        border-bottom: 1px solid #000;
     }
 
 }
@@ -308,5 +176,14 @@ footer {
 
     main pre {
         background: #1b1b1b;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+
+    .grid,
+    .things,
+    .catalog {
+        grid-column-stthings: span 4;
     }
 }
