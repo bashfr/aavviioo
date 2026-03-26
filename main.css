@@ -33,7 +33,6 @@ header {
     text-align: center;
 }
 
-
 cite::before {
     content: " — ";
 }
@@ -41,19 +40,23 @@ cite::before {
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
 }
 
-.art {
-    box-sizing: border-box;
-    padding: 10px;
+.grid figure a img {
+    width: 100%;
+    object-fit: fill;
+    height: 100%;
 }
 
-.art img {
+
+
+
+.art img,
+.grid figure img {
+    border-radius: 15px;
+    border: 1px solid #3d3d3d;
     max-width: 100%;
-}
-
-.photo {
-    background-size: cover;
 }
 
 
@@ -70,13 +73,13 @@ main a[target="_blank"] {
     text-decoration-style: double;
 }
 
-main img {
-    max-width: 100%;
-}
-
 
 figure {
     padding: 10px 0;
+}
+
+img {
+    max-width: 100%;
 }
 
 .grid figure img {
@@ -95,9 +98,12 @@ figure {
     color: #777;
 }
 
-footer {
-    border-top: 1px solid;
+/* footer {
     padding-top: 1em;
+} */
+
+footer hr {
+    margin: 1em 0;
 }
 
 .jump {
