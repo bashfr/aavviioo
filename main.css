@@ -75,6 +75,10 @@ main a[target="_blank"] {
     text-decoration-style: double;
 }
 
+main p {
+    line-height: 1.5;
+}
+
 
 figure {
     padding: 10px 0;
