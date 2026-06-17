@@ -37,6 +37,10 @@ cite::before {
     content: " — ";
 }
 
+pre {
+    padding: 10px;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -51,11 +55,13 @@ cite::before {
     align-items: center;
 }
 
-
-
+#audio, #visual, #in, #out {
+    border-bottom: 1px solid;
+}
 
 .art img,
-.grid figure img {
+.grid figure img,
+pre {
     border-radius: 15px;
     border: 1px solid #3d3d3d;
     max-width: 100%;
