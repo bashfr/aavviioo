@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="media/favicon.ico" type="image/png" rel="shortcut icon">
+    <link rel="stylesheet" href="main.css">
+    <title>home</title>
+</head>
+
+<body>
+    <header>
+        <a href="home.html"><img src="media/logo.svg" width="60"></a>
+        <!-- <nav>
+            <ul>
+                <li><a href="tree.html">tree</a></li>
+                <li><a href="echo.html">root</a></li>
+            </ul>
+        </nav> -->
+    </header>
+
+    <main id="content">
+        <figure>
+            <img src="media/index.png" alt="">
+        </figure>
+        <p>: <a href="tree.html">tree</a> : <a href="echo.html">echo</a> : <a href="about.html">about</a> :</p>
+
+    </main>
+
+    <footer>
+        <hr>
+        <a href="bashfr.html">Bash fon Ronsenburg</a>
+        <a href="log.html" style="float: right;">2025-2026</a>
+    </footer>
+    <script>
+        (async () => {
+            const contentEl = document.getElementById('content');
+            if (!contentEl) {
+                console.error('#content не найден — проверь HTML');
+                return;
+            }
+
+            function normalizePath(path) {
+                // Если путь "/" — грузим index.html, иначе оставляем как есть
+                return path === '/' ? '/index.html' : path;
+            }
+
+            async function loadPage(url) {
+                try {
+                    const res = await fetch(url);
+                    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+                    const html = await res.text();
+                    const doc = new DOMParser().parseFromString(html, 'text/html');
+
+                    // Берём только нужный фрагмент, чтобы не дублировать head/body
+                    const main = doc.querySelector('main') || doc.body;
+                    contentEl.innerHTML = main.innerHTML;
+
+                    // Обновляем title
+                    document.title = doc.title || 'Мой сайт';
+
+                    // Выполняем скрипты из подгруженного фрагмента
+                    const scripts = main.querySelectorAll('script');
+                    scripts.forEach(s => {
+                        const ns = document.createElement('script');
+                        if (s.src) {
+                            ns.src = s.src;
+                        } else {
+                            ns.textContent = s.textContent;
+                        }
+                        // Копируем атрибуты (async, defer, type и т.д.)
+                        Array.from(s.attributes).forEach(a => ns.setAttribute(a.name, a.value));
+                        document.head.appendChild(ns);
+                    });
+                } catch (e) {
+                    console.error('Ошибка загрузки страницы:', e);
+                    contentEl.innerHTML = '<h1>Страница не найдена</h1>';
+                }
+            }
+
+            // 1. Инициализация при загрузке
+            const initPath = normalizePath(window.location.pathname);
+            await loadPage(initPath);
+
+            // 2. Обработка кликов по ссылкам
+            document.addEventListener('click', e => {
+                const a = e.target.closest('a');
+                if (!a) return;
+
+                const href = a.getAttribute('href');
+                // Пропускаем якоря (#), внешние ссылки и пустые
+                if (!href || href.startsWith('#') || href.startsWith('http')) return;
+
+                e.preventDefault();
+
+                const path = normalizePath(href.startsWith('/') ? href : '/' + href);
+                history.pushState({ path }, '', path);
+                loadPage(path); // Здесь loadPage видна, потому что она внутри той же IIFE
+            });
+
+            // 3. Обработка кнопки «Назад/Вперёд»
+            window.addEventListener('popstate', e => {
+                if (e.state?.path) {
+                    loadPage(e.state.path);
+                } else {
+                    loadPage(normalizePath(window.location.pathname));
+                }
+            });
+        })();   
+    </script>
+</body>
+
+</html>
