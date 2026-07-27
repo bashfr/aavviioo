@@ -45,6 +45,10 @@ pre {
     padding: 10px;
 }
 
+summary h1 {
+    display: inline-block;
+}
+
 .left {
     text-align: left;
 }
@@ -79,9 +83,9 @@ pre {
     align-items: center;
 }
 
-#audio, #visual, #in, #out, #now, #projects {
+/* #audio, #visual, #in, #out, #now, #projects {
     border-bottom: 1px solid;
-}
+} */
 
 .art img,
 .grid figure img,
@@ -104,12 +108,19 @@ header,
 nav,
 main,
 footer {
-    margin: 0 auto;
+    margin: 1em auto;
     max-width: 800px;
 }
 
+footer {
+    padding-top: 1em;
+}
 
 main a[target="_blank"] {
+    text-decoration-style: dotted;
+}
+
+main a[target="_parent"] {
     text-decoration-style: double;
 }
 
