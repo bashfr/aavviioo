@@ -143,6 +143,12 @@ img {
     max-width: 100%;
 }
 
+q {
+    display: block;
+    width: 400px;
+    font-style: italic;
+}
+
 .grid figure img {
     object-fit: cover;
     width: 100%;
