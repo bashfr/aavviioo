@@ -28,13 +28,17 @@ body {
     /* margin: 0 auto; */
     font-family: sans-serif;
     padding: 15px;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 
 header {
     padding-bottom: 1em;
     /* text-align: center; */
+}
+
+header ul {
+    list-style-type: none;
 }
 
 cite::before {
@@ -202,7 +206,7 @@ footer hr {
 @media (prefers-color-scheme: light) {
 
     html {
-        background-image: url(media/back-invert.png);
+        background-image: url(../media/back-invert.png);
     }
 
     body {
