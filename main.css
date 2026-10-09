@@ -109,9 +109,11 @@ img {
 } */
 
 .index {
-    position: absolute;
+    max-width: 400px;
+    padding-top: calc(40vh - 100px);
+    /* position: absolute;
     top: calc(50vh - 50px);
-    left: calc(50vw - 100px);
+    left: calc(50vw - 100px); */
     /* border-radius: 3px;
     z-index: 100; */
 }
@@ -123,16 +125,16 @@ img {
 
 .index div {
     display: inline-block;
-}
-
-
-.index div {
-    float: right;
     vertical-align: bottom;
 }
 
 .index ul {
     list-style-type: none;
+}
+
+.index + footer {
+    margin: 0 auto;
+    width: 400px;
 }
 
 .home .grid {
@@ -199,9 +201,25 @@ main {
 }
 
 footer {
+    line-height: 20px;
     border-top: 1px solid;
     padding-top: 1em;
     clear: both;
+}
+
+footer div {
+    display: inline-block;
+}
+
+footer * {
+    vertical-align: middle;
+    height: 35px;
+    /* display: inline-block; */
+}
+
+footer img {
+    width: 35px;
+    float: right;
 }
 
 main a[target="_blank"] {

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../media/favicon.ico" type="image/png" rel="shortcut icon">
+    <link rel="stylesheet" href="../main.css">
+    <title>inner world of distracted soul</title>
+</head>
+<body>
+    <header>
+        <ul class="lang">
+            <li><a href="../en/forest.html">en</a></li>
+            <li><i>ru</i></li>
+        </ul>
+    </header>
+
+    <nav>
+    </nav>
+
+    <main>
+        <h1>Artyom Grechko | Gecko</h1>
+        <script>
+            'use strict'
+            function update() {
+                _el.textContent = `${((new Date() - new Date("2004-05-20")) / 31557600000).toFixed(9)}`
+            }
+            function start() {
+                setTimeout(() => { update(); requestAnimationFrame(start); }, 1000 / 30);
+            }
+            const _el = document.createElement('span')
+            document.body.append(_el);
+            start();
+        </script>
+        <p>Цифровой бездарь, пробующий себя в различных направлениях.</p>
+        <figure>
+            <img src="../media/a1.png" alt="">
+        </figure>
+
+        <h2>Contacts</h3>
+            <ul>
+                <li>e-mail : aavviioo@proton.me</li>
+                <li>telegram : @bashfr</li>
+            </ul>
+
+            <span>: <a href="../index.html">index</a> : <a href="about.html">about</a> : <a href="iwds.html">iwds</a>
+                :</span>
+    </main>
+
+    <footer>
+        <span>Artyom Grechko</span>
+        &bull;
+        <span>2025-2026</span>
+        <a href="https://webring.xxiivv.com/#aavviioo" target="_blank" rel="noopener">
+            <img src="https://webring.xxiivv.com/icon.black.svg" alt="XXIIVV webring" />
+        </a>
+    </footer>
+</body>
+
+</html>
