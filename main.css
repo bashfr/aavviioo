@@ -23,6 +23,10 @@ a {
     vertical-align: baseline;
 }
 
+a img {
+    text-decoration: none;
+}
+
 .art a {
     text-decoration: none;
 }
@@ -77,6 +81,10 @@ img {
     max-width: 100%;
 }
 
+span a {
+    text-decoration: none;
+}
+
 .site-nav ul li {
     list-style-type: none;
 }
@@ -124,17 +132,28 @@ img {
 }
 
 .index div {
-    display: inline-block;
     vertical-align: bottom;
 }
 
 .index ul {
+    display: flex;
+    justify-content: space-evenly;
     list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+.index ul li {
+    display: inline-block;
 }
 
 .index + footer {
     margin: 0 auto;
-    width: 400px;
+    max-width: 400px;
+}
+
+.index div ul {
+    margin-bottom: 0;
 }
 
 .home .grid {
@@ -185,7 +204,7 @@ pre {
 }
 
 .lang {
-    margin-top: 1em;
+    margin-top: 0;
     /* border-bottom: 1px solid; */
     float: right;
     padding: 0;
@@ -286,7 +305,7 @@ footer hr {
         background: #000;
     }
     
-    a:hover {
+    a:hover:not(.logo) {
         background-color: #fff;
         color: #000;
     }
