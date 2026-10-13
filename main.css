@@ -45,6 +45,10 @@ body {
     text-align: center;
 } */
 
+header span {
+    vertical-align: super;
+}
+
 header ul {
     list-style-type: none;
 }
@@ -231,13 +235,13 @@ footer div {
 }
 
 footer * {
-    vertical-align: middle;
-    height: 35px;
+    height: 20px;
     /* display: inline-block; */
 }
 
 footer img {
-    width: 35px;
+    width: 25px;
+    height: auto;
     float: right;
 }
 
