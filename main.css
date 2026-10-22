@@ -305,9 +305,6 @@ footer hr {
 }
 
 @media (prefers-color-scheme: dark) {
-    html {
-        background-image: url(media/back.png);
-    }
 
     body {
         background: #000;
@@ -320,10 +317,6 @@ footer hr {
 }
 
 @media (prefers-color-scheme: light) {
-
-    html {
-        background-image: url(media/back-invert.png);
-    }
 
     body {
         background: #fff;
