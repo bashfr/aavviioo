@@ -122,12 +122,9 @@ span a {
 
 .index {
     max-width: 400px;
-    padding-top: calc(40vh - 100px);
-    /* position: absolute;
-    top: calc(50vh - 50px);
-    left: calc(50vw - 100px); */
-    /* border-radius: 3px;
-    z-index: 100; */
+    position: absolute;
+    top: calc(50vh - 150px);
+    left: calc(50vw - 260px);
 }
 
 .index a {
@@ -151,7 +148,7 @@ span a {
     display: inline-block;
 }
 
-.index + footer {
+.index+footer {
     margin: 0 auto;
     max-width: 400px;
 }
@@ -309,7 +306,7 @@ footer hr {
     body {
         background: #000;
     }
-    
+
     a:hover:not(.logo) {
         background-color: #fff;
         color: #000;
