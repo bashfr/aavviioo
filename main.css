@@ -1,3 +1,7 @@
+* {
+    line-height: 1.5;
+}
+
 nav ul,
 figure {
     padding: 0;
@@ -5,13 +9,9 @@ figure {
     list-style-type: none;
 }
 
-h1 {
+h1, .index a {
     text-align: center;
 }
-
-/* nav ul li {
-    display: inline-block;
-} */
 
 a {
     color: #000;
@@ -23,27 +23,15 @@ a {
     vertical-align: baseline;
 }
 
-a img {
-    text-decoration: none;
-}
-
-.art a {
+.art a, a img, .index a, span a, nav ul a, .art, .art h3 {
     text-decoration: none;
 }
 
 body {
-    /* text-transform: lowercase; */
     margin: 0 auto;
     font-family: sans-serif;
     padding: 45px 45px;
-    /* text-align: justify; */
 }
-
-
-/* header {
-    padding-bottom: 1em;
-    text-align: center;
-} */
 
 header span {
     vertical-align: super;
@@ -84,24 +72,15 @@ nav ul {
 img {
     max-width: 100%;
 }
-
-span a {
-    text-decoration: none;
-}
-
-.site-nav ul li {
+nav ul li {
     list-style-type: none;
 }
 
-.site-nav ul span {
+nav ul span {
     font-size: 0.5rem;
 }
 
-.site-nav ul a {
-    text-decoration: none;
-}
-
-.site-nav ul li:hover {
+nav ul li:hover {
     background: var(--listHoverBgColor);
     color: var(--listHoverTextColor);
 }
@@ -114,22 +93,11 @@ span a {
     text-align: right;
 }
 
-/* body:has(.index) {
-    width: 6600px;
-    height: 3600px;
-    cursor: grab;
-} */
-
 .index {
     max-width: 400px;
     position: absolute;
     top: calc(50vh - 150px);
     left: calc(50vw - 260px);
-}
-
-.index a {
-    text-align: center;
-    text-decoration: none;
 }
 
 .index div {
@@ -138,7 +106,7 @@ span a {
 
 .index ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     list-style-type: none;
     text-align: center;
     padding: 0;
@@ -184,36 +152,32 @@ span a {
     align-items: center;
 }
 
-/* #audio, #visual, #in, #out, #now, #projects {
-    border-bottom: 1px solid;
-} */
-
 .art img,
 .grid figure img,
 pre {
-    /* border-radius: 4px;
-    border: 1px solid #3d3d3d; */
     max-width: 100%;
-}
-
-.art {
-    text-align: center;
-}
-
-.art h3 {
-    text-align: center;
 }
 
 .lang {
     margin-top: 0;
-    /* border-bottom: 1px solid; */
     float: right;
     padding: 0;
 }
 
-/* .lang li {
-    display: inline-block;
-} */
+.river p {
+    text-align: justify;
+}
+
+.river section {
+    border: 1px solid #1b1b1b;
+    padding: 1em;
+    margin-bottom: 20px;
+}
+
+.river section p:first-child {
+    color: #8b8b8b;
+}
+
 main {
     margin: 0 auto;
     max-width: 800px;
@@ -233,13 +197,13 @@ footer div {
 
 footer * {
     height: 20px;
-    /* display: inline-block; */
 }
 
 footer img {
-    width: 25px;
+    width: 30px;
     height: auto;
     float: right;
+    vertical-align: sub;
 }
 
 main a[target="_blank"] {
@@ -248,10 +212,6 @@ main a[target="_blank"] {
 
 main a[target="_parent"] {
     text-decoration-style: double;
-}
-
-* {
-    line-height: 1.5;
 }
 
 
@@ -286,10 +246,6 @@ q {
 .gray * {
     color: #777;
 }
-
-/* footer {
-    padding-top: 1em;
-} */
 
 footer hr {
     margin: 1em 0;
@@ -363,6 +319,34 @@ footer hr {
     }
 }
 
+@media (max-width: 900px) {
+    nav {
+        columns: 2;
+    }
+
+    body {
+        padding: 45px;
+    }
+
+    body main>ul.jump {
+        columns: 1 !important
+    }
+}
+
+@media (max-width: 700px) {
+    nav {
+        columns: 1;
+    }
+
+    body {
+        padding: 45px;
+    }
+
+    body main>ul.jump {
+        columns: 1 !important
+    }
+}
+
 @media only screen and (max-width: 500px) {
 
     .grid,
@@ -373,64 +357,5 @@ footer hr {
 
     body {
         font-size: 16px;
-    }
-}
-
-@media (max-width: 900px) {
-    nav {
-        columns: 2;
-    }
-
-    body {
-        padding: 45px;
-    }
-
-    body main>ul.jump {
-        columns: 1 !important
-    }
-}
-
-@media (max-width: 700px) {
-    nav {
-        columns: 1;
-    }
-
-    body {
-        padding: 45px;
-    }
-
-    body main>ul.jump {
-        columns: 1 !important
-    }
-}
-
-
-
-
-@media (max-width: 900px) {
-    nav {
-        columns: 2;
-    }
-
-    body {
-        padding: 45px;
-    }
-
-    body main>ul.jump {
-        columns: 1 !important
-    }
-}
-
-@media (max-width: 700px) {
-    nav {
-        columns: 1;
-    }
-
-    body {
-        padding: 45px;
-    }
-
-    body main>ul.jump {
-        columns: 1 !important
     }
 }
