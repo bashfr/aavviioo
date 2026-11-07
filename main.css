@@ -1,9 +1,9 @@
-* {
+/* * {
     line-height: 1.5;
-}
+} */
 
 nav ul,
-figure {
+figure, section ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
@@ -23,7 +23,7 @@ a {
     vertical-align: baseline;
 }
 
-.art a, a img, .index a, span a, nav ul a, .art, .art h3 {
+.art a, a img, .index a, span a, nav ul a, .art, .art h3, header a {
     text-decoration: none;
 }
 
@@ -31,6 +31,11 @@ body {
     margin: 0 auto;
     font-family: sans-serif;
     padding: 45px 45px;
+}
+
+header {
+    margin: 0 auto 40px auto;
+    max-width: 400px;
 }
 
 header span {
@@ -93,18 +98,18 @@ nav ul li:hover {
     text-align: right;
 }
 
-.index {
+/* .index {
     max-width: 400px;
     position: absolute;
     top: calc(50vh - 150px);
     left: calc(50vw - 260px);
-}
+} */
 
 .index div {
     vertical-align: bottom;
 }
 
-.index ul {
+header ul {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
@@ -184,6 +189,10 @@ main {
     padding-bottom: 1em;
 }
 
+main p, li {
+    line-height: 1.5;
+}
+
 footer {
     line-height: 20px;
     border-top: 1px solid;
@@ -204,6 +213,11 @@ footer img {
     height: auto;
     float: right;
     vertical-align: sub;
+}
+
+td {
+    padding: 10px;
+    min-width: 400px;
 }
 
 main a[target="_blank"] {
