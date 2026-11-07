@@ -98,12 +98,16 @@ nav ul li:hover {
     text-align: right;
 }
 
-/* .index {
+.index {
     max-width: 400px;
     position: absolute;
     top: calc(50vh - 150px);
     left: calc(50vw - 260px);
-} */
+}
+
+.index header {
+    margin: 0;
+}
 
 .index div {
     vertical-align: bottom;
