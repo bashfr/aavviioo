@@ -182,17 +182,17 @@ pre {
     padding: 0;
 }
 
-.river p {
+.card p {
     text-align: justify;
 }
 
-.river section {
+.card {
     border: 1px solid #1b1b1b;
     padding: 1em;
     margin-bottom: 20px;
 }
 
-.river section p:first-child {
+.card p:first-child {
     color: #8b8b8b;
 }
 
