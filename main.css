@@ -306,7 +306,7 @@ footer hr {
         background: #000;
     }
 
-    a:hover:not(.logo) {
+    a:hover {
         background-color: #fff;
         color: #000;
     }
