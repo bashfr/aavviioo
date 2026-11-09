@@ -27,7 +27,7 @@ a {
 
 .art a,
 a img,
-.index a,
+.index header a,
 nav ul a,
 .art,
 .art h3,
@@ -277,6 +277,11 @@ q {
 .box {
     margin: 0 auto;
     max-width: 400px;
+}
+
+.current {
+    text-decoration: underline;
+    font-style: italic;
 }
 
 .gray,
