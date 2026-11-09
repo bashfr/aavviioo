@@ -2,6 +2,14 @@
     line-height: 1.5;
 } */
 
+.ru {
+    display: none;
+}
+
+html:target .ru {
+    display: block;
+}
+
 nav ul,
 figure,
 section ul {
@@ -37,7 +45,8 @@ header a {
 
 body {
     margin: 0 auto;
-    font-family: sans-serif;
+    font-family: monospace;
+    font-size: 16px;
     padding: 45px 45px;
 }
 
@@ -67,7 +76,6 @@ summary h1 {
 }
 
 nav {
-    margin-right: 100px;
     float: left;
     padding-bottom: 1em;
 }
@@ -197,6 +205,7 @@ pre {
 }
 
 main {
+    text-align: justify;
     margin: 0 auto;
     max-width: 800px;
     padding-bottom: 1em;
@@ -368,22 +377,18 @@ footer hr {
 }
 
 @media (max-width: 900px) {
-    nav {
-        columns: 2;
-    }
 
     body {
         padding: 45px;
     }
-
-    body main>ul.jump {
-        columns: 1 !important
-    }
+    nav {
+        float: none
+    };
 }
 
 @media (max-width: 700px) {
     nav {
-        columns: 1;
+        float: none;
     }
 
     body {
