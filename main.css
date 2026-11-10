@@ -117,9 +117,9 @@ nav ul li:hover {
 
 .index {
     max-width: 400px;
-    position: absolute;
+    /* position: absolute;
     top: calc(50vh - 150px);
-    left: calc(50vw - 260px);
+    left: calc(50vw - 260px); */
 }
 
 .index header {
@@ -293,6 +293,10 @@ q {
     font-style: italic;
 }
 
+.child {
+    margin: 0 20px;
+}
+
 .gray,
 .gray * {
     color: #777;
@@ -376,29 +380,24 @@ footer hr {
     }
 }
 
+@media (max-width: 1200px) {
+    nav {
+        float: none
+    }
+}
+
 @media (max-width: 900px) {
 
     body {
-        padding: 45px;
+        padding: 20px;
     }
-    nav {
-        float: none
-    };
 }
 
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
     nav {
         float: none;
     }
-
-    body {
-        padding: 45px;
-    }
-
-    body main>ul.jump {
-        columns: 1 !important
-    }
-}
+} */
 
 @media only screen and (max-width: 500px) {
 
